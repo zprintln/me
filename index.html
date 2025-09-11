@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Zadie Moon</title>
+    <meta name="description" content="Zadie's Portfolio">
+    <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+
+    <link rel="image_src" href=images/thumbnail.png>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171185333-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-171185333-1');
+    </script>
+
+
+</head>
+
+<body class="theme-light">
+
+
+<div class="container">
+
+    <nav>
+        <div class="logo">
+            <a href="index.html">Zadie.</a>
+        </div>
+        <div class="toggle-container">
+            <!--<span class="iconify" data-icon="bx:bx-brightness" data-inline="false"></span>-->
+            <input type="checkbox" id="switch" name="theme" onChange="changeTheme()" /><label for="switch">Toggle</label>
+            <span class="iconify" data-icon="bx:bx-moon" data-inline="false"></span>
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" id="active">Work</a></li>
+            <li><a href="https://www.instagram.com/moon.zadie/" target="_blank">Fun</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="header" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="faint">Zadie Moon.</h1>
+            <h1>Engineer. Designer.</h1>
+            <!-- is a product designer passionate about
+                creating meaningful, impactful products.-->
+        </div>
+
+        <div class="desc-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <div class="desc-item">
+                <h4>CURRENT</h4>
+                <p>Freelance Product Designer at <a href="https://friendly.studio" target="_blank" class="link">Friendly Studio</a></p>
+            </div>
+            <div class="desc-item">
+                <h4>SOON</h4>
+                <p>Incoming Product Designer at <a href="https://design.facebook.com/" target="_blank" class="link">Facebook</a></p>
+            </div>
+            <div class="desc-item">
+                <h4>PAST</h4>
+                <p>Former intern at <a href="https://design.facebook.com/" target="_blank" class="link">Facebook</a>,
+                    <a href="https://www.deloittedigital.com/us/en.html" target="_blank" class="link">Deloitte Digital</a>, and
+                    <a href="http://cover.com/" target="_blank" class="link">Cover</a></p>
+            </div>
+        </div>
+
+        <div class="divider"> </div>
+
+    </div>
+
+
+    <div class="project-list">
+        <h1 class="faint">Featured Projects.</h1>
+
+        <div class="divider"></div>
+
+        <a href="facebook.html">
+            <div class="project" data-aos="fade-up" data-aos-duration="800">
+
+                <div class="project-tags">
+                    <div class="tag">
+                        <p>PRODUCT DESIGN</p>
+                    </div>
+                    <div class="tag">
+                        <p>INTERNSHIP</p>
+                    </div>
+                </div>
+                <div class="prj-title">
+                    <h2>Facebook Internship</h2>
+                    <div class="arrow">
+                        <span class="iconify" data-icon="bi:arrow-right" data-inline="false" data-width="40" data-height="40"></span>
+                    </div>
+                </div>
+                <h3>A summary of my growth and experiences working at Facebook.</h3>
+                <div class="prj-img">
+                    <img src="images/facebook.png" class="index-img">
+                </div>
+            </div>
+        </a>
+
+        <div class="divider"></div>
+
+        <a href="helios.html">
+            <div class="project" data-aos="fade-up" data-aos-duration="800">
+
+                <div class="project-tags">
+                    <div class="tag">
+                        <p>PRODUCT DESIGN</p>
+                    </div>
+                    <div class="tag">
+                        <p>CASE STUDY</p>
+                    </div>
+                </div>
+
+                <div class="prj-title">
+                    <h2>Helios</h2>
+                    <div class="arrow">
+                        <span class="iconify" data-icon="bi:arrow-right" data-inline="false" data-width="40" data-height="40"></span>
+                    </div>
+                </div>
+                <h3>Building a community of entrepreneurship and talent.</h3>
+                <div class="prj-img">
+                    <img src="images/helios2.png" class="index-img" id="helios-2">
+                    <img src="images/helios1.png" class="index-img" id="helios-1">
+
+                </div>
+            </div>
+        </a>
+
+        <div class="divider"></div>
+
+        <a href="misc.html">
+            <div class="project" data-aos="fade-up" data-aos-duration="800">
+
+                <div class="project-tags">
+                    <div class="tag">
+                        <p>GALLERY</p>
+                    </div>
+                    <div class="tag">
+                        <p>UI DESIGN</p>
+                    </div>
+                </div>
+
+                <div class="prj-title">
+                    <h2>Misc Projects</h2>
+                    <div class="arrow">
+                        <span class="iconify" data-icon="bi:arrow-right" data-inline="false" data-width="40" data-height="40"></span>
+                    </div>
+                </div>
+                <h3>Collection of UI explorations and miscellaneous projects.</h3>
+                <div class="prj-img">
+                    <img src="images/misc/misc.png" class="index-img-misc">
+
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+</div>
+
+<div class="small-divider"></div>
+
+<div class="container">
+
+    <footer>
+        <h2>Let's Get in Touch</h2>
+        <p>HMU for work, coffee chats, advice, or LMK about your marine animal :)</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/zadie-moon/" target="_blank" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right" data-inline="false"></span>LinkedIn</a>
+            <a href="https://instagram.com/moon.zadie" target="_blank"  class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right" data-inline="false"></span>Instagram</a>
+            <a href="mailto:zadiemoon.println.com"  class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right" data-inline="false"></span>Email</a>
+        </div>
+        <div class="copyright">
+            <p>Designed and coded by Zadie Moon ♥️!</p>
+            <p id="caption">© Zadie Moon 2025</p>
+        </div>
+
+    </footer>
+
+</div>
+
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!--<img src="images/idk.png" class="flair">-->
+<!--<img src="images/lol.png" class="flair">-->
+<!--<img src="images/lol.png" class="flair">-->
+
+</body>
+
+
+</html>
