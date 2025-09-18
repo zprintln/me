@@ -683,6 +683,38 @@ html.transition *:after {
     }
 }
 
+/* Audio player styling */
+.audio-player {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--bg2);
+    border-radius: 8px;
+    border: 1px solid var(--text20);
+}
+
+.audio-player audio {
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+
+.audio-player audio::-webkit-media-controls-panel {
+    background-color: var(--bg1);
+    border-radius: 4px;
+}
+
+.audio-info {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.play-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    color: var(--text50);
+    font-style: italic;
+}
+
 
 
 /* Footer */
