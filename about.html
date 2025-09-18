@@ -147,19 +147,24 @@
             <div class="other-row" data-aos="fade-up" data-aos-duration="800">
                 <div class="other-title">
                     <h2>What I'm listening to</h2>
-                    <p>Don’t by Hwasa and Loco, Comme des Garçons by Jiwoo, Know Me by GEMINI</p>
+                    <p></p>
                 </div>
                 <div class="img-gallery">
-                    <img src="images/song1.png" class="img-tile">
-                    <img src="images/song2.png" class="img-tile">
-                    <img src="images/song3.png" class="img-tile">
+                    <img src="images/misc/song1.jpg" class="img-tile" data-song="song1" data-artist="Le Trio Joubran" data-description="A Palestinian oud trio known for their innovative approach to traditional Arabic music, blending classical techniques with contemporary sounds.">
+                    <img src="images/misc/song2.jpg" class="img-tile" data-song="song2" data-artist="Ultraviolence by Lana Del Rey" data-description="A dreamy, cinematic album that showcases Lana's signature melancholic vocals and retro-inspired soundscapes.">
+                    <img src="images/misc/song3.jpg" class="img-tile" data-song="song3" data-artist="Hammer by Lorde" data-description="A powerful track from Lorde's latest album, featuring her distinctive voice and introspective lyrics.">
+                    <img src="images/misc/song4.jpg" class="img-tile" data-song="song4" data-artist="Somosaico" data-description="An album created by dear friends from capoeira, blending traditional Brazilian rhythms with contemporary musical elements.">
+                </div>
+                <div id="song-description" class="song-description" style="display: none;">
+                    <h3 id="song-artist"></h3>
+                    <p id="song-details"></p>
                 </div>
             </div>
 
             <div class="other-row" data-aos="fade-up" data-aos-duration="800">
                 <div class="other-title">
-                    <h2>What I'm watching</h2>
-                    <p>Attack on Titan, Jujutsu Kaisen, Queen's Gambit, Heaven Official’s Blessing,
+                    <h2>What I'm doing</h2>
+                    <p>playing capoeira
                         Criminal Minds, Wonder Egg Priority</p>
                 </div>
                 <div class="img-gallery">
@@ -209,6 +214,36 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
+    
+    // Song card click functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const songCards = document.querySelectorAll('.img-tile[data-song]');
+        const songDescription = document.getElementById('song-description');
+        const songArtist = document.getElementById('song-artist');
+        const songDetails = document.getElementById('song-details');
+        
+        songCards.forEach(card => {
+            card.addEventListener('click', function() {
+                // Remove active class from all cards
+                songCards.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked card
+                this.classList.add('active');
+                
+                // Get song data
+                const artist = this.getAttribute('data-artist');
+                const description = this.getAttribute('data-description');
+                
+                // Update description content
+                songArtist.textContent = artist;
+                songDetails.textContent = description;
+                
+                // Show description with animation
+                songDescription.style.display = 'block';
+                songDescription.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            });
+        });
+    });
 </script>
 
 
