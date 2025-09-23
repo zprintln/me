@@ -175,6 +175,18 @@
                 </div>
             </div>
 
+            <!-- YouTube Video Section -->
+            <div class="other-row" data-aos="fade-up" data-aos-duration="800">
+                <div class="other-title">
+                    <h2>Featured Video</h2>
+                    <p>Check out this video</p>
+                </div>
+                <div class="video-container">
+                    <div id="player"></div>
+                    <button id="refresh-video" class="refresh-btn" onclick="refreshVideo()" style="display: none;">Refresh Video</button>
+                </div>
+            </div>
+
         </div>
 
 
@@ -210,6 +222,93 @@
 
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- YouTube IFrame API -->
+<script>
+    // Load YouTube IFrame API
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+    // Immediate fallback: Use iframe directly instead of API
+    console.log('Using direct iframe approach for reliability');
+    document.addEventListener('DOMContentLoaded', function() {
+        var playerDiv = document.getElementById('player');
+        if (playerDiv) {
+            playerDiv.innerHTML = '<iframe width="800" height="450" src="https://www.youtube.com/embed/ir-9QGnR-f0?si=gk-OXZie3LvrAx8y&controls=1&start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+        }
+    });
+
+    // YouTube player variables
+    var player;
+    
+    // This function creates the YouTube player after the API loads
+    function onYouTubeIframeAPIReady() {
+        console.log('YouTube API loaded, creating player...');
+        try {
+            player = new YT.Player('player', {
+                height: '450',
+                width: '800',
+                videoId: 'ir-9QGnR-f0',
+                playerVars: {
+                    'start': 5
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onError': onPlayerError
+                }
+            });
+        } catch (error) {
+            console.error('Error creating YouTube player:', error);
+            // Fallback to iframe
+            useIframeFallback();
+        }
+    }
+    
+    function useIframeFallback() {
+        console.log('Using iframe fallback');
+        var playerDiv = document.getElementById('player');
+        if (playerDiv) {
+            playerDiv.innerHTML = '<iframe width="800" height="450" src="https://www.youtube.com/embed/ir-9QGnR-f0?si=gk-OXZie3LvrAx8y&controls=1&start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+        }
+    }
+    
+    // Global refresh function
+    function refreshVideo() {
+        console.log('Refreshing video...');
+        var playerDiv = document.getElementById('player');
+        if (playerDiv) {
+            // Clear the container
+            playerDiv.innerHTML = '';
+            // Add a small delay then reload
+            setTimeout(function() {
+                playerDiv.innerHTML = '<iframe width="800" height="450" src="https://www.youtube.com/embed/ir-9QGnR-f0?si=gk-OXZie3LvrAx8y&controls=1&start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+            }, 100);
+        }
+    }
+
+    // Called when the video player is ready
+    function onPlayerReady(event) {
+        console.log('YouTube player is ready');
+        // Auto-play is disabled by default for better UX
+        // event.target.playVideo();
+    }
+
+    // Called when there's an error
+    function onPlayerError(event) {
+        console.error('YouTube player error:', event.data);
+        // Use iframe fallback on any error
+        useIframeFallback();
+    }
+
+    // Called when the player's state changes
+    function onPlayerStateChange(event) {
+        console.log('Player state changed:', event.data);
+        // Removed auto-stop functionality - video will play until the end
+    }
+</script>
+
 <script>
     AOS.init();
     
