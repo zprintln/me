@@ -1177,3 +1177,19 @@ color: var(--text-secondary);
 margin-top: 0.75rem;
 line-height: 1.4;
 }
+
+
+.prj-img img {
+display: block;
+max-width: 100%;
+height: auto; /* preserves original ratio */
+border-radius: 12px; /* gentle rounded corners */
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* optional soft shadow */
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+margin: 0 auto; /* centers the image if smaller than container */
+}
+
+.prj-img img:hover {
+transform: scale(1.01);
+box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
