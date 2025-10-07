@@ -31,6 +31,6 @@ I grew up in a low-income household with **no screens**, but a lot of curiosity.
 
 * **LinkedIn:** [linkedin.com/in/zadie-moon](https://www.linkedin.com/in/zadie-moon/)
 * **Instagram:** [instagram.com/moon.zadie](https://instagram.com/moon.zadie)
-* **Email:** zadiemoon.println.com
+* **Email:** sendto:zadiemoon.println.com
 
 
