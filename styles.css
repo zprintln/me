@@ -1179,7 +1179,7 @@ line-height: 1.4;
 }
 
 
-.prj-img img {
+.prj-img-gdg img {
 display: block;
 max-width: 100%;
 height: auto; /* preserves original ratio */
@@ -1191,5 +1191,5 @@ margin: 0 auto; /* centers the image if smaller than container */
 
 .prj-img img:hover {
 transform: scale(1.01);
-box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+border-radius: 12px; /* gentle rounded corners */
 }
