@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pyre — Zadie</title>
+    <meta name="description" content="Zadie Moon Product Management Portfolio — Pyre Case Study">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link rel="image_src" href="images/pyre-thumbnail.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="theme-light">
+<div class="container">
+
+    <nav>
+        <div class="logo">
+            <a href="index.html">Zadie.</a>
+        </div>
+        <div class="toggle-container">
+            <!--<span class="iconify" data-icon="bx:bx-brightness" data-inline="false"></span>-->
+            <input type="checkbox" id="switch" name="theme" onChange="changeTheme()" /><label for="switch">Toggle</label>
+            <span class="iconify" data-icon="bx:bx-moon" data-inline="false"></span>
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" id="active">Work</a></li>
+            <li><a href="https://www.instagram.com/moon.zadie/" target="_blank">Fun</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="prj-img prj-img" data-aos="fade-up" data-aos-duration="1000">
+        <img src="images/pyre/pyreSide.png" class="index-img" alt="Pyre product cover">
+        <img src="images/pyre/pyreBRC.png" class="index-img" alt="Pyre product cover">
+    </div>
+
+    <div class="prj-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <h2>Pyre: Wildfire Radio Alert System</h2>
+        <br><br>
+        <div class="context">
+            <div class="context-item">
+                <h4>ROLE</h4>
+                <p>Product Owner & Lead Designer</p>
+            </div>
+            <div class="context-item">
+                <h4>TEAM</h4>
+                <p>3-person cross-functional team (PM, Marketing, Prompt Engineer)</p>
+            </div>
+            <div class="context-item">
+                <h4>DURATION</h4>
+                <p>48 hours — Climate Resilience Hackathon (April 2024)</p>
+            </div>
+            <div class="context-item">
+                <h4>TOOLS</h4>
+                <p>Figma, Miro, Notion, ArcGIS, OpenAI API, Google Sheets</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Project Overview</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                The Pyre Wildfire Radio Alert System provides a life-saving communication tool for vulnerable communities during wildfire crises by delivering satellite-based evacuation alerts to households without internet or cellular access.
+            </p>
+            <p>
+                As product owner and lead designer, I defined the product vision, led end-to-end research and design, and aligned our cross-functional team on a two-day roadmap to deliver a high-impact MVP — combining hardware design, system mapping, and UI prototyping for emergency management operations.
+            </p>
+        </div>
+    </div>
+
+    <!-- Problem -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Problem</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                75% of rural Californians live in high-risk wildfire zones without reliable broadband or cellular service — making digital alerts inaccessible and evacuation timelines dangerously slow.
+            </p>
+            <p>
+                As climate-driven wildfires grow in intensity, local governments face limited tools to notify residents in real time. Current systems like text alerts and emergency apps depend on connectivity, leaving low-income and elderly residents most vulnerable.
+            </p>
+        </div>
+    </div>
+
+    <!-- Product Goal -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Product Goal</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Develop a scalable, offline alert system that empowers emergency agencies to send targeted evacuation warnings to disconnected communities — without relying on digital infrastructure.
+            </p>
+            <p>
+                Our product needed to meet three criteria: **resilient delivery**, **low learning curve**, and **municipal deployability**. Within 48 hours, I scoped and designed an MVP that achieved functional proof-of-concept across each.
+            </p>
+        </div>
+    </div>
+
+    <!-- Research -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Research & Discovery</h5></div>
+        <div class="prj-content">
+            <p>
+                I analyzed wildfire and broadband access data from CAL FIRE, FEMA, and the U.S. Census Bureau, and interviewed three emergency management professionals to validate feasibility. I synthesized insights into key product requirements.
+            </p>
+            <h4>Key Insights</h4>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Residents in rural zones often rely on analog systems like radios and alarms — familiarity is critical for adoption.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Emergency teams need a clear interface for issuing and tracking multi-zone alerts under time pressure.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Alerts must support multiple languages and auditory formats to reach diverse and elderly populations.</p></div>
+            <img src="images/pyre-research.png" class="prj-content-img-shadow" alt="Research synthesis">
+        </div>
+    </div>
+
+    <!-- Product Strategy -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Product Strategy & MVP Scope</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                I led scoping decisions to define a feasible MVP that would demonstrate end-to-end functionality: from agency dashboard → satellite → household receiver.
+            </p>
+            <div class="bullet"><div class="dot"><p>1.</p></div><p><strong>Dashboard Interface:</strong> Allows agencies to draw evacuation zones, preview messages, and send alerts via satellite uplink.</p></div>
+            <div class="bullet"><div class="dot"><p>2.</p></div><p><strong>Radio Receiver Device:</strong> Emits siren and voice-based alert signals using satellite-triggered activation.</p></div>
+            <div class="bullet"><div class="dot"><p>3.</p></div><p><strong>Data Integration:</strong> Pulls from real-time CAL FIRE data to preemptively identify high-risk zones.</p></div>
+            <p>
+                By defining these as the minimum viable components, I ensured the product demo could simulate a complete emergency workflow — validating concept-market fit.
+            </p>
+        </div>
+    </div>
+
+    <!-- Design Execution -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Design Execution</h5></div>
+        <div class="prj-content">
+            <p>
+                I owned the end-to-end design process — from wireframes to visual prototypes — ensuring usability and clarity for both emergency operators and residents.
+            </p>
+
+            <h4>Dashboard Highlights</h4>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Geospatial targeting via ArcGIS API integration.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Evacuation message templates with multilingual and audio options.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Real-time feedback of signal delivery and device response.</p></div>
+            <img src="images/pyre/pyreSide.png" class="prj-content-img-shadow" alt="Dashboard mockup">
+
+            <h4>Hardware Design</h4>
+            <p>
+                I designed the Pyre receiver unit to be solar-powered, affordable, and intuitive. Its interface mirrors traditional fire alarms, minimizing learning barriers.
+            </p>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Solar panel power source for off-grid reliability.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Audible and visual alert triggers (siren + LED indicators).</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Accessible design for elderly users — tactile buttons, bilingual labeling.</p></div>
+            <img src="images/pyre-mockup-1.png" class="prj-content-img-shadow" alt="Device mockup">
+        </div>
+    </div>
+
+    <!-- Impact -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Impact & Results</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Pyre was awarded top honors at the Climate Resilience Hackathon for “Most Equitable Climate Innovation” — praised for its scalability, usability, and inclusive design.
+            </p>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Functional simulation of alert delivery workflow completed within 48 hours.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Validated operational flow with two emergency service professionals during demo.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Projected potential deployment: 200K+ at-risk residents in Northern California fire zones.</p></div>
+        </div>
+    </div>
+
+    <!-- Takeaways -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Key Takeaways</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Building Pyre solidified my product philosophy: equity and usability are inseparable from innovation.
+            </p>
+            <p>
+                As product lead, I learned to balance urgency, scope, and vision — defining clear MVP boundaries while driving toward real-world impact. The experience reinforced my ability to move from **problem discovery to product delivery** under high-stakes, time-constrained environments.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="top">
+        <a href="#top" class="social-link">Back to Top <span class="iconify" data-icon="bi:arrow-up"></span></a>
+    </div>
+</div>
+
+<div class="container">
+    <footer>
+        <h2>Let's Connect</h2>
+        <p>Interested in designing resilient systems that bridge equity and technology? Let’s talk. 🌎</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/zadie-moon/" target="_blank" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right"></span>LinkedIn</a>
+            <a href="https://instagram.com/moon.zadie" target="_blank" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right"></span>Instagram</a>
+            <a href="mailto:zadiemoon.println@gmail.com" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right"></span>Email</a>
+        </div>
+        <div class="copyright">
+            <p>Designed and written by Zadie Moon ♥️</p>
+            <p id="caption">© Zadie Moon 2025</p>
+        </div>
+    </footer>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>
