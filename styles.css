@@ -385,13 +385,15 @@ html.transition *:after {
     height: 30rem;
     background-color: var(--bg1);
     margin: 2rem 0;
-    border-radius: .5rem;
     overflow: hidden;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    border-radius: 12px; /* gentle rounded corners */
+    gap: 40px;
+    
 }
 
 .index-img {
