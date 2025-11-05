@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Veil — Zadie</title>
+    <meta name="description" content="Zadie Moon Product Design Portfolio — Veil Case Study">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+
+    <link rel="image_src" href="images/veil-thumbnail.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body class="theme-light">
+
+<div class="container">
+
+    <nav id="top">
+        <div class="logo">
+            <a href="index.html">Zadie.</a>
+        </div>
+        <div class="toggle-container">
+            <input type="checkbox" id="switch" name="theme" onChange="changeTheme()" /><label for="switch">Toggle</label>
+            <span class="iconify" data-icon="bx:bx-moon" data-inline="false"></span>
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://www.instagram.com/moon.zadie/" target="_blank">Fun</a></li>
+        </ul>
+    </nav>
+
+    <div class="prj-img" data-aos="fade-up" data-aos-duration="1000">
+        <img src="images/veil-cover1.png" class="index-img" id="veil-1">
+        <img src="images/veil-cover2.png" class="index-img" id="veil-2">
+    </div>
+
+    <div class="prj-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="-200">
+        <h2>Veil</h2>
+        <br><br>
+        <div class="context">
+            <div class="context-item">
+                <h4>ROLE</h4>
+                <p>Product Manager & UX Researcher</p>
+            </div>
+            <div class="context-item">
+                <h4>TOOLS</h4>
+                <p>Figma, Miro, Notion, Adobe XD, Maze (for testing)</p>
+            </div>
+            <div class="context-item">
+                <h4>DURATION</h4>
+                <p>May 2025 — October 2025 (6 months)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Brief</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Veil is a blind dating platform designed to reduce endless swiping and foster authentic connections.
+            </p>
+            <p>
+                Instead of swiping through photos, users connect through shared values, prompts, and short live “first dates.”
+                As Product Manager, I defined the product vision, prioritized user needs, and built basic designs to bring an MVP from concept to interactive prototype.
+            </p>
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Problem</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Dating apps want to keep on them. Users, especially Gen-Z, report high fatigue from superficial matching.
+            </p>
+            <p>
+                Our research revealed a core tension: users wanted a modern, digital dating experience <em>without</em> losing the emotional safety and authenticity of in-person connection.
+            </p>
+            <div class="quote">
+                <h3>“Everyone just swipes. It’s like a game, not connection.”</h3>
+                <p>— Jess, 22, San Francisco</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Goal</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Build a dating product that prioritizes chemistry before appearance to reduce the burnout common on current platforms.
+            </p>
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Target Users</h5></div>
+        <div class="prj-content">
+            <p><strong>Primary:</strong> Gen-Z singles (18–27) in large U.S. cities seeking authentic connections.</p>
+            <p><strong>Secondary:</strong> Users disillusioned by swipe culture but still open to digital dating.</p>
+            <img src="images/user-persona-veil.png" class="prj-content-img-shadow">
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Research & Insights</h5></div>
+        <div class="prj-content">
+            <p>
+                I led qualitative interviews (n=28) and two surveys (n=74) to identify emotional drivers and friction points in digital dating.
+            </p>
+            <h4>Key Findings</h4>
+
+            <div class="bullet"><div class="dot"><p>●</p></div><p>89% felt judged primarily on looks.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>71% valued conversation and tone more than profile photos.</p></div>
+             <div class="bullet"><div class="dot"><p>●</p></div><p>68% Have been catfished by a date. </p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>“Real connection” and “trust” were repeatedly mentioned as missing from current apps.</p></div>
+
+            <img src="images/research-veil.png" class="prj-content-img-shadow">
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Product Strategy</h5></div>
+        <div class="prj-content">
+            <p>
+                From our insights, I defined four pillars for MVP success:
+            </p>
+            <br/>
+            <div class="bullet"><div class="dot"><p>1.</p></div><p>Chemistry-first matching: prioritize conversational compatibility before profile reveal.</p></div>
+            <div class="bullet"><div class="dot"><p>2.</p></div><p>Safety by design: integrate consent-driven video and moderation.</p></div>
+            <div class="bullet"><div class="dot"><p>3.</p></div><p>Low-pressure engagement: create structured, short interactions to minimize fatigue.</p></div>
+        
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Ideation & Wireframes</h5></div>
+        <div class="prj-content">
+            <p>
+                Using Figma and by hand, I sketched early flows for onboarding, blind match setup, and first-date experience. Wireframes were validated with 5 testers for usability feedback.
+            </p>
+            <img src="images/sketches-veil.png" class="prj-content-img-shadow">
+            <img src="images/wireframes-veil.png" class="prj-content-img-shadow">
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Key Product Decisions</h5></div>
+        <div class="prj-content">
+
+            <h4>1. Voice-first onboarding</h4>
+            <p class="callout">Users record a short “about me” audio clip instead of uploading photos.</p>
+            <img src="images/onboarding-veil.png" class="prj-content-img-shadow">
+
+            <h4>2. Blurred video first dates</h4>
+            <p class="callout">Users meet through time-limited, blurred video calls that gradually reveal after mutual consent.</p>
+            <img src="images/call-veil.png" class="prj-content-img-shadow">
+
+            <h4>3. Daily curated matches</h4>
+            <p class="callout">
+                Two high-quality daily matches replace endless swiping.
+            </p>
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Product Execution</h5></div>
+        <div class="prj-content">
+            <p>
+                I facilitated weekly sprint planning, design and engineering to prioritize features for a low-code prototype.
+            </p>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Validated wireframes via Maze with 5 target users.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Used completion rate and conversation duration to gauge engagement potential.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Iterated on onboarding after identifying a 43% drop-off during early testing.</p></div>
+            <img src="images/wireframes-veil.png" class="prj-content-img-shadow">
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Metrics</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Measurable outcomes validated the impact of Veil’s design decisions on authenticity, safety, and engagement.
+            </p>
+
+            <div class="bullet"><div class="dot"><p>●</p></div><p><strong>3.5×</strong> longer average conversation duration potential compared to traditional swipe apps.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p><strong>64%</strong> of testers described Veil as “more genuine” and “less performative” than other dating platforms.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p><strong>89%</strong> of users indicated they would recommend Veil to a friend (NPS ≥ 8).</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p><strong>43%</strong> reduction in onboarding drop-off after refining UX copy and microinteractions.</p></div>
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Visual Design</h5></div>
+        <div class="prj-content">
+            <p>
+                The UI was designed to evoke comfort and safety — soft gradients, illustrations, and subtle motion. We focused on high readability and mood-positive color palettes.
+            </p>
+            <img src="images/ui-veil.png" class="prj-content-img">
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Next Steps</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                AI-driven moderation, conversation gamification, and community partnerships.
+            </p>
+            <p>
+                Our next milestones include integrating real-time AI moderation for video safety, introducing interaction awards, and exploring partnerships with dating influencers for launch positioning.
+            </p>
+        </div>
+    </div>
+
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Takeaways</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Building emotionally intelligent products means balancing innovation with user comfort and trust.
+            </p>
+            <p>
+                Through Veil, I learned to translate qualitative insights into measurable product goals, facilitate cross-functional collaboration, and define a roadmap grounded in empathy and data. This project reaffirmed my passion for leading products that prioritize human connection and long-term impact over vanity metrics.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="top">
+        <a href="#top" class="social-link">Back to Top <span class="iconify" data-icon="bi:arrow-up"></span></a>
+    </div>
+</div>
+
+<div class="container">
+    <footer>
+        <h2>Let's Connect</h2>
+        <p>Reach out for design collabs, product chats, or taco recs in SF 🌮</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/zadie-moon/" target="_blank" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right"></span>LinkedIn</a>
+            <a href="https://instagram.com/moon.zadie" target="_blank" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right"></span>Instagram</a>
+            <a href="mailto:zadiemoon.println@gmail.com" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right"></span>Email</a>
+        </div>
+        <div class="copyright">
+            <p>Designed and coded by Zadie Moon ♥️</p>
+            <p id="caption">© Zadie Moon 2025</p>
+        </div>
+    </footer>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</body>
+</html>
