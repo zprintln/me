@@ -400,6 +400,10 @@ html.transition *:after {
     max-height: 75%;
     width: auto;
 }
+.index-img-pyre {
+    max-height: 100%;
+    width: auto;
+}
 
 .project .index-img {
     transition: all 0.3s ease-out;
