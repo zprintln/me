@@ -412,6 +412,25 @@ html.transition *:after {
     transition: all 0.3s ease-out;
 }
 
+.case-study-img {
+width: 100%;
+height: auto;
+max-width: 700px;      /* keeps image from getting too large on wide screens */
+display: block;
+margin: 0 auto;
+border-radius: 0.75rem;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.case-study-img-wrapper {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 2rem 0;
+}
+
+
 .project:hover .index-img {
     transform: scale(1.06);
     /*-moz-transform: scale(1.1);*/
