@@ -13,7 +13,7 @@ I grew up in a low-income household with **no screens**, but a lot of curiosity.
 * **Google Developer Group (GDG) – Founder & Lead Organizer**
   Built a community from scratch at Northeastern University Oakland, supporting 200+ students through **hackathons, workshops, and panels**. Partnered with Google, Pinterest, Salesforce, and Apple, creating mentorship and career growth opportunities.
 
-* **AWS Align Engineering Apprenticeship**
+* **AWS Apprenticeship**
   One of 15 participants selected for a highly competitive pre-career program. Collaborated with engineers to prototype **cloud and AI/ML solutions**, learning how to translate technical possibilities into real user impact.
 
 * **AI, Product, and Civic Tech Projects**
@@ -32,7 +32,6 @@ I grew up in a low-income household with **no screens**, but a lot of curiosity.
 ## Connect With Me
 
 * **LinkedIn:** [linkedin.com/in/zadie-moon](https://www.linkedin.com/in/zadie-moon/)
-* **Instagram:** [instagram.com/moon.zadie](https://instagram.com/moon.zadie)
 * **Email:** zadiemoon.println@gmail.com
 
 
