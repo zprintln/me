@@ -8,23 +8,24 @@
     <link rel="image_src" href="images/pyre-thumbnail.png">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="theme-light">
 <div class="container">
 
-    <nav>
+<nav id="top">
         <div class="logo">
             <a href="index.html">Zadie.</a>
         </div>
         <div class="toggle-container">
-            <!--<span class="iconify" data-icon="bx:bx-brightness" data-inline="false"></span>-->
-            <input type="checkbox" id="switch" name="theme" onChange="changeTheme()" /><label for="switch">Toggle</label>
+            <input type="checkbox" id="switch" name="theme" onChange="changeTheme()" />
+            <label for="switch">Toggle</label>
             <span class="iconify" data-icon="bx:bx-moon" data-inline="false"></span>
         </div>
         <ul class="navigation">
-            <li><a href="index.html" id="active">Work</a></li>
+            <li><a href="index.html">Work</a></li>
             <li><a href="https://www.instagram.com/moon.zadie/" target="_blank">Fun</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
