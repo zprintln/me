@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Simpath — Zadie</title>
+    <meta name="description" content="Zadie Moon Product Design Portfolio — Simpath Case Study">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link rel="image_src" href="images/simpath-thumbnail.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="theme-light">
+<div class="container">
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="index.html">Zadie.</a>
+        </div>
+        <div class="toggle-container">
+            <input type="checkbox" id="switch" name="theme" onChange="changeTheme()" />
+            <label for="switch">Toggle</label>
+            <span class="iconify" data-icon="bx:bx-moon" data-inline="false"></span>
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" id="active">Work</a></li>
+            <li><a href="https://www.instagram.com/moon.zadie/" target="_blank">Fun</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Images -->
+    <div class="prj-img" data-aos="fade-up" data-aos-duration="1000">
+        <img src="images/simpath/simpathHero1.png" class="prj-img index-img" alt="Simpath mobile prototype">
+    </div>
+
+    <!-- Header -->
+    <div class="prj-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <h2>Simpath: AI-Powered Clinical Training Platform</h2>
+        <br><br>
+        <div class="context">
+            <div class="context-item">
+                <h4>ROLE</h4>
+                <p>Product Designer & AI Research Lead</p>
+            </div>
+            <div class="context-item">
+                <h4>TEAM</h4>
+                <p>Graduate Research Apprentice — Khoury College of Computer Sciences</p>
+            </div>
+            <div class="context-item">
+                <h4>DURATION</h4>
+                <p>June 2024 – May 2025</p>
+            </div>
+            <div class="context-item">
+                <h4>TOOLS</h4>
+                <p>Figma, Python, Hugging Face, RAG Pipelines, Notion</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Project Overview</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Simpath reimagines how clinicians train by generating realistic, culturally diverse patient dialogues that help practitioners strengthen empathy, accuracy, and communication.
+            </p>
+            <p>
+                As product designer and AI research lead, I led the design and technical development of Simpath — building workflows for persona generation, retrieval-augmented generation (RAG), and feedback evaluation that improved training realism and bias transparency.
+            </p>
+        </div>
+    </div>
+
+    <!-- Problem -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Problem</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                The U.S. faces a severe shortage of trained mental health providers, reducing access to care and increasing burnout among clinicians.
+            </p>
+            <p>
+                Traditional therapy training relies on costly, time-intensive supervision and limited exposure to diverse client experiences. As a result, practitioners often graduate without adequate preparation for real-world cross-cultural scenarios or confidence in their therapeutic communication.
+            </p>
+
+            <div class="case-study-img-wrapper" data-aos="fade-up" data-aos-duration="800">
+                <img src="images/simpath/probGraph.png" class="case-study-img" alt="Therapist shortage data chart">
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Goal -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Product Goal</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Develop an AI-powered simulation tool that allows clinicians to practice patient interactions safely, receive feedback, and evaluate their performance.
+            </p>
+            <p>
+                The goal was to create an interactive, evidence-based training system that combines realistic AI personas with measurable outcomes for empathy, clinical accuracy, and ethical decision-making.
+            </p>
+        </div>
+    </div>
+
+    <!-- Methods -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Methods</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Simpath integrates large language models, prompt engineering, and feedback analysis to create authentic, bias-aware therapeutic scenarios.
+            </p>
+
+            <h4>Pipeline Overview</h4>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Extracted anonymized therapeutic dialogues from clinical case data to create base persona sets.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Used Hugging Face APIs and fine-tuned <i>gemma-2b-it</i> models with retrieval-augmented generation.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Developed an evaluation loop with clinician reviewers to measure realism and detect bias patterns.</p></div>
+
+            <div class="case-study-img-wrapper" data-aos="fade-up" data-aos-duration="800">
+                <img src="images/simpath/methods.png" class="case-study-img" alt="Simpath system methods diagram">
+            </div>
+        </div>
+    </div>
+
+    <!-- Design Execution -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Design & Prototyping</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                I designed and tested Simpath’s clinician interface to visualize session feedback, persona traits, and conversational flow.
+            </p>
+
+            <h4>Key Features</h4>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Persona Editor — configure demographic and behavioral variables for AI-generated patients.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Therapy Session Player — interactive chat simulation with live empathy and bias scoring.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Clinician Dashboard — tracks performance metrics and displays aggregated fairness analysis.</p></div>
+
+            <div class="case-study-img-wrapper" data-aos="fade-up" data-aos-duration="800">
+                <img src="images/simpath/simpath3.png" class="case-study-img" alt="Simpath app prototype screens">
+            </div>
+
+            <!-- Embedded Figma Prototype -->
+            <div class="case-study-img-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                <iframe 
+                    src="https://embed.figma.com/proto/TqzafNwYnIq7ClbwoADgyt/Simpath?node-id=2-133&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A133&embed-host=share"
+                    width="800"
+                    height="450"
+                    style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 10px; width: 100%; max-width: 800px;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Impact -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Impact & Evaluation</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Pilot evaluations showed that Simpath meaningfully strengthened training realism and produced measurable gains in clinician practice, while also revealing key limits and opportunities for improvement.
+            </p>
+
+            <h4>What we measured</h4>
+            <div class="bullet">
+                <div class="dot"><p>●</p></div>
+                <p><strong>Conversational fidelity:</strong> AI-Generated Patient Personas successfully replicated conversational patterns present in real therapy transcripts, producing turn-taking, response structure, and domain-relevant phrasing that trainees found realistic.</p>
+            </div>
+
+            <div class="bullet">
+                <div class="dot"><p>●</p></div>
+                <p><strong>Task accuracy:</strong> Model performance varied by scenario complexity and clinical use case. Simpler, well-scoped prompts produced high-fidelity responses, while complex DSM-5 scenarios (comorbidities, nuanced affect) exposed gaps in emotional accuracy and clinical nuance.</p>
+            </div>
+
+            <div class="bullet">
+                <div class="dot"><p>●</p></div>
+                <p><strong>Training outcomes:</strong> Clinician testers reported clearer decision pipelines and improved confidence after repeated simulation sessions; structured evaluation showed improved decision-making trends in pilot tasks (see evaluation methods below).</p>
+            </div>
+
+            <div class="bullet">
+                <div class="dot"><p>●</p></div>
+                <p><strong>Fairness & bias mitigation:</strong> Iterative fine-tuning and targeted evaluation reduced several bias signals in generated responses; however, mitigation effects were scenario-dependent and require larger-scale testing to confirm robustness.</p>
+            </div>
+
+            <h4>Evaluation methods</h4>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Mixed-methods pilot: clinician ratings (qualitative realism, usability), blinded task assessments (decision accuracy), and automated fairness metrics across demographic slices.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Human review loops: clinician annotators validated outputs and flagged failure modes used for targeted retraining and prompt adjustments.</p></div>
+
+            <h4>Limitations & next steps</h4>
+            <div class="bullet">
+                <div class="dot"><p>●</p></div>
+                <p>Emotional nuance and complex clinical reasoning remain the largest failure modes; we plan expanded scenario coverage and human-in-the-loop adaptation to improve these dimensions.</p>
+            </div>
+
+            <div class="bullet">
+                <div class="dot"><p>●</p></div>
+                <p>We are conducting larger-scale evaluations to quantify the effect sizes for accuracy and bias reductions and to validate transfer across different clinician populations and DSM-5 use cases.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Takeaways -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Key Takeaways</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Designing Simpath continued to remind me that ethical AI design begins with empathy — both for those who are represented by the data and those who aren't yet, we must work even harder to create more inclusive systems.
+            </p>
+            <p>
+                This project solidified my ability to combine UX design with applied AI research. By bridging technical modeling and human-centered evaluation, I learned how to create AI systems that not only perform well but also align with real-world clinical ethics and accessibility needs.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="container">
+    <div class="top">
+        <a href="#top" class="social-link">Back to Top <span class="iconify" data-icon="bi:arrow-up"></span></a>
+    </div>
+</div>
+
+<div class="container">
+    <footer>
+        <h2>Let's Connect</h2>
+        <p>Interested in ethical AI and healthcare innovation? Let’s talk. 🌿</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/zadie-moon/" target="_blank" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right"></span>LinkedIn</a>
+            <a href="https://instagram.com/moon.zadie" target="_blank" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right"></span>Instagram</a>
+            <a href="mailto:zadiemoon.println@gmail.com" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right"></span>Email</a>
+        </div>
+        <div class="copyright">
+            <p>Designed and written by Zadie Moon ♥️</p>
+            <p id="caption">© Zadie Moon 2025</p>
+        </div>
+    </footer>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="script.js"></script>
+</body>
+</html>
