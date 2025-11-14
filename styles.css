@@ -444,6 +444,33 @@ align-items: center;
 margin: 2rem 0;
 }
 
+/* Row Layout */
+.case-study-img-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+    margin: 2rem 0;
+    flex-wrap: nowrap;
+}
+
+/* Thumbnail images */
+.case-study-img-small {
+    width: 380px;     
+    height: 240px;    
+    object-fit: cover;
+    border-radius: 0.5rem;
+    cursor: pointer;  /* makes it clear they are clickable */
+    transition: transform 0.2s ease;
+}
+
+
+.case-study-img-small:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+}
+
 
 .project:hover .index-img {
     transform: scale(1.06);
@@ -499,18 +526,6 @@ margin: 2rem 0;
     background-color: var(--bg1);
     margin-right: 8px;
     white-space: nowrap;
-}
-
-
-
-#helios-1 {
-    visibility: hidden;
-    height: 0;
-}
-
-#helios-2 {
-    /*visibility: hidden;*/
-    order: 1
 }
 
 
@@ -1227,4 +1242,14 @@ margin: 0 auto; /* centers the image if smaller than container */
 .prj-img img:hover {
 transform: scale(1.01);
 border-radius: 12px; /* gentle rounded corners */
+}
+
+.quote-block {
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    opacity: 0.9;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
