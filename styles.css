@@ -386,14 +386,13 @@ html.transition *:after {
     background-color: var(--bg2);
     margin: 2rem 0;
     overflow: hidden;
-
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     border-radius: 12px; /* gentle rounded corners */
-    gap: 40px;
-    
+    gap: 1rem;
+    flex-wrap: wrap; /* Makes them stack on small screens */
 }
 
 .index-img {
@@ -447,28 +446,47 @@ margin: 2rem 0;
 /* Row Layout */
 .case-study-img-row {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.75rem;
+    flex-wrap: wrap;          /* allows stacking on mobile */
+    justify-content: center;  /* centers images */
+    gap: 1.5rem;              /* spacing between images */
     margin: 2rem 0;
-    flex-wrap: nowrap;
 }
 
 /* Thumbnail images */
 .case-study-img-small {
-    width: 380px;     
-    height: 240px;    
+    width: 100%;
+    max-width: 380px;     /* controls their max size on desktop */
+    aspect-ratio: 16/10;  /* keeps the shape consistent */
     object-fit: cover;
     border-radius: 0.5rem;
-    cursor: pointer;  /* makes it clear they are clickable */
-    transition: transform 0.2s ease;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
 .case-study-img-small:hover {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     transform: translateY(-4px);
-    transition: all 0.3s ease;
+}
+
+/* --- DESKTOP BEHAVIOR --- */
+/* Force side-by-side on larger screens */
+@media (min-width: 700px) {
+    .case-study-img-row {
+        flex-wrap: nowrap;   /* side-by-side */
+    }
+
+    .case-study-img-small {
+        width: auto;         /* use max-width only */
+    }
+}
+
+/* --- MOBILE BEHAVIOR --- */
+/* Stack vertically */
+@media (max-width: 699px) {
+    .case-study-img-small {
+        max-width: 100%;    /* full width on mobile */
+    }
 }
 
 .simpath-graph{
