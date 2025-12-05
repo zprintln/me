@@ -1277,3 +1277,33 @@ border-radius: 12px; /* gentle rounded corners */
     font-size: 1.1rem;
     line-height: 1.6;
 }
+.two-by-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.tile {
+    position: relative;
+    height: 260px;
+    border-radius: 24px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.tile:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.tile-overlay h3,
+.tile-overlay p {
+    color: white;
+    margin: 0;
+}
