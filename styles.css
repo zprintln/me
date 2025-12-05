@@ -1103,23 +1103,6 @@ footer {
         height: auto;
     }
 
-    #helios-2 {
-        visibility: hidden;
-        height: 0;
-    }
-
-    #helios-1 {
-        visibility: inherit;
-        height: auto;
-    }
-
-    /*.prj-subtitle {*/
-    /*width: 30%;*/
-    /*}*/
-
-    /*.prj-content {*/
-    /*width: 70%;*/
-    /*}*/
 
     .prj-section {
         flex-direction: column;
@@ -1285,7 +1268,7 @@ border-radius: 12px; /* gentle rounded corners */
 
 .tile {
     position: relative;
-    height: 260px;
+    height: 400px;
     border-radius: 24px;
     overflow: hidden;
     background-size: cover;
@@ -1306,4 +1289,18 @@ border-radius: 12px; /* gentle rounded corners */
 .tile-overlay p {
     color: white;
     margin: 0;
+}
+
+.hero-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+}
+
+.hero-two img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    object-fit: cover;
 }

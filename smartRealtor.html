@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Smart Realtor — Zadie</title>
+    <meta name="description" content="Zadie Moon Product Portfolio — Smart Realtor Case Study">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link rel="image_src" href="images/smartrealtor-thumbnail.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+
+<body class="theme-light">
+<div class="container">
+
+    <!-- Navigation -->
+    <nav id="top">
+        <div class="logo">
+            <a href="index.html">Zadie.</a>
+        </div>
+        <div class="toggle-container">
+            <input type="checkbox" id="switch" name="theme" onChange="changeTheme()" />
+            <label for="switch">Toggle</label>
+            <span class="iconify" data-icon="bx:bx-moon" data-inline="false"></span>
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="https://www.instagram.com/moon.zadie/" target="_blank">Fun</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Images -->
+    <div class="hero-two" data-aos="fade-up" data-aos-duration="1000">
+        <img src="images/smartrealtor/NotifsCloseup.png" alt="Smart Realtor prototype 1">
+        <img src="images/smartrealtor/resultsCloseup.png" alt="Smart Realtor prototype 2">
+    </div>
+
+    <!-- Header -->
+    <div class="prj-header" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <h2>Smart Realtor</h2>
+        <br><br>
+        <div class="context">
+            <div class="context-item">
+                <h4>ROLE</h4>
+                <p>Product Developer & AI Systems Designer</p>
+            </div>
+            <div class="context-item">
+                <h4>TEAM</h4>
+                <p>AWS Hackathon – 1st Place Team</p>
+            </div>
+            <div class="context-item">
+                <h4>DURATION</h4>
+                <p>Aug 2025</p>
+            </div>
+            <div class="context-item">
+                <h4>TOOLS</h4>
+                <p>Figma, Next.js, Python, Weaviate, AWS, LangChain</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Project Overview</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Smart Realtor is an AI-powered real estate recommendation system that helps buyers find homes aligned with their lifestyle needs.
+            </p>
+            <p>
+                As product developer, I designed the product vision, built the frontend, and implemented
+                a multi-agent pipeline powered by Weaviate semantic search. Our architecture reduced search latency by 
+                <strong>10×</strong> and generated personalized, explainable property recommendations within seconds.
+            </p>
+        </div>
+    </div>
+
+    <!-- Problem -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Problem</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Homebuyers struggle to navigate overwhelming search process
+            </p>
+            <p>
+                Traditional real estate tools rely on structured filters (price, location, beds/baths) but fail to capture
+                nuanced buyer needs like commute patterns, neighborhood culture, school quality, layout preferences, and lifestyle goals.
+            </p>
+
+            <div class="case-study-img-wrapper" data-aos="fade-up" data-aos-duration="800">
+                <img src="images/smartrealtor/searchConfusion.png" 
+                    class="case-study-img" >
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Product Goal -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Product Goal</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Build a property discovery platform that understands lifestyle-level needs and delivers transparent, ranked recommendations — instantly.
+            </p>
+            <p>
+                We aimed to create a tool that feels more like a smart real estate advisor:
+                one that can interpret user intent, match unstructured preferences to listings, and explain why each home is (or isn’t) a good fit.
+            </p>
+        </div>
+    </div>
+
+    <!-- Methods -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Methods</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Smart Realtor uses a multi-agent system powered by Weaviate semantic search to convert user preferences into high-fidelity property matches.
+            </p>
+
+            <h4>Pipeline Overview</h4>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Embedded 100,000+ Zillow listings into Weaviate to enable vector-based neighborhood and feature matching.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Built a Buyer Intent Agent that interprets natural language preferences into structured ranking criteria.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Designed a Recommendation Agent that merges semantic similarity with price, budget, and lifestyle constraints.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Implemented an Explanation Agent that surfaces transparent reasoning behind each recommendation.</p></div>
+
+            <div class="case-study-img-wrapper" data-aos="fade-up" data-aos-duration="800">
+                <img src="images/smartrealtor/sr-methods.png" class="case-study-img" alt="Smart Realtor AI pipeline diagram">
+            </div>
+        </div>
+    </div>
+
+    <!-- Design Execution -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Design & Prototyping</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                I created a simple, intuitive interface where users describe their ideal home in their own words.
+            </p>
+
+            <h4>Key Features</h4>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Natural language search — “I want a quiet neighborhood near cafés with a short commute to downtown.”</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Smart ranking — properties scored using semantic relevance, lifestyle alignment, and price fit.</p></div>
+            <div class="bullet"><div class="dot"><p>●</p></div><p>Transparent explanations — clear, human-readable reasoning for every recommendation.</p></div>
+
+            <div class="case-study-img-wrapper" data-aos="fade-up" data-aos-duration="800">
+                <img src="images/smartrealtor/LandingCloseup.png" class="case-study-img" alt="Smart Realtor interface prototypes">
+            </div>
+        </div>
+    </div>
+
+    <!-- Impact -->
+    <div class="prj-section">
+        <div class="prj-subtitle"><h5>Impact & Results</h5></div>
+        <div class="prj-content">
+            <p class="callout">
+                Smart Realtor helped buyers identify relevant properties 10× faster — and earned first place at the AWS Hackathon for its real-world usability and technical execution.
+            </p>
+
+            <h4>What we achieved</h4>
+
+            <div class="bullet">
+                <div class="dot"><p>●</p></div>
+                <p><strong>10× faster discovery:</strong> Vector search reduced query time from ~8 seconds to under 1 second.</p>
+            </div>
+
+            <div class="bullet">
+                <div class="dot"><p>●</p></div>
+                <p><strong>Higher match quality:</strong> Multi-agent reasoning improved alignment with user intent by capturing subtle lifestyle cues.</p>
+            </div>
+
+            <div class="bullet">
+                <div class="dot"><p>●</p></div>
+                <p><strong>Better decision confidence:</strong> Buyers reported increased trust due to transparent recommendation explanations.</p>
+            </div>
+
+            <div class="case-study-img-wrapper" data-aos="fade-up" data-aos-duration="800">
+                <img src="images/smartrealtor/sr-impact.png" class="case-study-img" alt="Smart Realtor impact visualization">
+            </div>
+        </div>
+    </div>
+
+<!-- Takeaways -->
+<div class="prj-section">
+    <div class="prj-subtitle"><h5>Key Takeaways</h5></div>
+    <div class="prj-content">
+
+        <!-- Quote Block -->
+        <div class="quote-block" data-aos="fade-up" data-aos-duration="800">
+            <p>
+                “The future of real estate search isn’t filters — it’s understanding people.”
+            </p>
+        </div>
+
+        <p class="callout">
+            Smart Realtor showed me how powerful AI can be when it bridges technical capabilities with human needs.  
+            Buyers don’t always want more data — they want clarity, alignment, and confidence.
+        </p>
+
+        <p>
+            Leading both the product direction and technical build pushed me to balance feasibility, user experience, and system-level architecture. It deepened my ability to translate ambiguous preferences into structured AI flows that feel intuitive and trustworthy.
+        </p>
+
+        <p>
+            Most importantly, this project reinforced a belief I carry into every product I build:  
+            AI is only useful when it amplifies human decision-making — not complexity.
+        </p>
+
+        <div class="case-study-img-row" data-aos="fade-up" data-aos-duration="800">
+            <img src="images/smartrealtor/team.jpg" 
+                class="case-study-img-small" 
+                alt="Hackathon team photo">
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="container">
+    <div class="top">
+        <a href="#top" class="social-link">Back to Top <span class="iconify" data-icon="bi:arrow-up"></span></a>
+    </div>
+</div>
+
+<div class="container">
+    <footer>
+        <h2>Let's Connect</h2>
+        <p>Interested in human-centered AI and product innovation? Let’s talk. 🏡</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/zadie-moon/" target="_blank" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right"></span>LinkedIn</a>
+            <a href="https://instagram.com/moon.zadie" target="_blank" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right"></span>Instagram</a>
+            <a href="mailto:zadiemoon.println@gmail.com" class="social-link">
+                <span class="iconify" data-icon="akar-icons:arrow-right"></span>Email</a>
+        </div>
+        <div class="copyright">
+            <p>Designed and written by Zadie Moon ♥️</p>
+            <p id="caption">© Zadie Moon 2025</p>
+        </div>
+    </footer>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="script.js"></script>
+</body>
+</html>
