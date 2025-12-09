@@ -1324,3 +1324,12 @@ border-radius: 12px; /* gentle rounded corners */
     transform: scale(1.03);
     box-shadow: 0 12px 24px rgba(0,0,0,0.12);
 }
+
+.img-dictionary {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+}
