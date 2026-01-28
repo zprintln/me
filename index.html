@@ -97,7 +97,7 @@
 
     <div class="project-list">
         
-        <h1 class="faint">Featured Projects.</h1>
+        <h1 class="faint" id="featuredprojects">Featured Projects.</h1>
 
         <div class="divider"></div>
 
@@ -247,6 +247,18 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+
+<script>
+window.addEventListener("load", () => {
+const hash = window.location.hash;
+if (hash) {
+    const target = document.querySelector(hash);
+    if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+    }
+}
+});
 </script>
 
 </body>
