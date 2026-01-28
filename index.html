@@ -250,13 +250,16 @@
 </script>
 
 <script>
-window.addEventListener("load", () => {
-const hash = window.location.hash;
-if (hash) {
-    const target = document.querySelector(hash);
-    if (target) {
-    target.scrollIntoView({ behavior: "smooth" });
-    }
+document.addEventListener("DOMContentLoaded", () => {
+if (window.location.hash) {
+const target = document.querySelector(window.location.hash);
+
+if (target) {
+    // wait for AOS + layout shifts
+    setTimeout(() => {
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 600);
+}
 }
 });
 </script>
